@@ -132,3 +132,6 @@ After running the command, the API will be available at http://127.0.0.1:8000.
 
 ### Testing the Endpoints
 You can use tools like Postman to test the API endpoints.
+
+### Testing Endpoints in Render
+The API is deployed in render.com, so you can make the requests to the endpoint https://fastapi-practice-erwc.onrender.com/ and insert the request, for example, the get all is https://fastapi-practice-erwc.onrender.com/courses
