@@ -51,7 +51,7 @@ A simple API to manage courses, built with FastAPI. This API allows you to creat
 - **Path Parameter**:
   - `searched_id` (str): The ID of the course to update.
 - **Request Body**:
-  - `nombre` (str): Updated name of the course.
+  - `name` (str): Updated name of the course.
   - `description` (str, optional): Updated description of the course.
   - `level` (str): Updated level of the course.
   - `duration` (int): Updated duration of the course in hours.

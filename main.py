@@ -7,7 +7,7 @@ app = FastAPI()
 
 class Course(BaseModel):
     id: Optional[str] = None
-    nombre: str
+    name: str
     description: Optional[str] = None
     level: str
     duration: int # Hours
@@ -37,7 +37,7 @@ def create_courses(course:Course):
     
 
 # CR(U)D: UPDATE
-@app.put("/courses/{course_id}", response_model=Course)
+@app.put("/courses/{searched_id}", response_model=Course)
 def update_course(searched_id: str, updated_course: Course):
     course = next((course for course in courses_db if course.id == searched_id), None) # Next => First appearance in the array
     if course is None:
