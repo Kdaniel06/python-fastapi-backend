@@ -71,9 +71,10 @@ A simple API to manage courses, built with FastAPI. This API allows you to creat
 
 ### Prerequisites
 
-- Python 3.7+
-- FastAPI
-- Uvicorn (ASGI server)
+- **Python 3.7+**
+- **FastAPI**
+- **Uvicorn** (ASGI server)
+- **Pytest**: For automated testing of API endpoints.
 
 ### Installation
 
@@ -132,6 +133,15 @@ After running the command, the API will be available at http://127.0.0.1:8000.
 
 ### Testing the Endpoints
 You can use tools like Postman to test the API endpoints.
+
+### Automated Testing with Pytest
+To run the automated tests for the API endpoints, use the following command:
+
+```bash
+pytest
+```
+
+Make sure you have pytest installed in your environment. These tests help ensure that the endpoints function correctly and meet the expected requirements.
 
 ### Testing Endpoints in Render
 The API is deployed in render.com, so you can make the requests to the endpoint https://fastapi-practice-erwc.onrender.com/ and insert the request, for example, the get all is https://fastapi-practice-erwc.onrender.com/courses
